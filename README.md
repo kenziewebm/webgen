@@ -24,6 +24,7 @@ tag | effect
 .code | Defines a code block with syntax highlighting (language specified)
 .link | Defines a hyperlink
 .img | Inserts an image
+.hr | inserts an horizontal line
 
 Example WG file:
 
@@ -32,12 +33,11 @@ Example WG file:
 .s Introduction
 .p Welcome to my website!
 .ssec About
-.p This website is created using the webgen compiler.
+.p This website was created using webgen.
 .code bash
 #!/usr/bin/env bash
 echo "Hello, World!"
 .end
-.link https://github.com/webgen Github Repository
 ```
 
 The above WG file will generate the following HTML:
@@ -45,14 +45,16 @@ The above WG file will generate the following HTML:
 ```html
 <title>My Website</title>
 <h1>1. Introduction</h1>
-<p>Welcome to my website!</p>
-<h2>1.1 About</h2>
-<p>This website is created using the webgen compiler.</p>
+<p>Welcome to my website!
+<h2>1.1. About</h2>
+<p>This website was created using webgen.
 <code><pre>
-<span style="color: #c8c8c8;">#!/usr/bin/env bash</span>
-<span style="color: #c8c8c8;">echo "Hello, World!"</span>
+lang: bash
+<hr>
+<span style="color:#a0a1a7;">#</span><span style="color:#a0a1a7;">!/usr/bin/env bash</span>
+<span style="color:#0184bc;">echo</span><span style="color:#383a42;"> </span><span style="color:#50a14f;">&quot;</span><span style="color:#50a14f;">Hello, World!</span><span style="color:#50a14f;">&quot;</span>
 </pre></code>
-<a href="https://github.com/webgen">GitHub Repository</a>
+<hr><small>made with <a href="https://github.com/aquakenzie/webgen">webgen</a> <3</small>
 ```
 
 see the `examples` directory for more.
