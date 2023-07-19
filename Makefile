@@ -17,7 +17,7 @@ examples:
 batconfig:
 	mkdir -p ~/.config/bat/syntaxes/webgen
 	cp configs/sublime-text/webgen.sublime-syntax  ~/.config/bat/syntaxes/webgen/
-	bat cache --buildOA
+	bat cache --build
 	
 clean:
 	rm examples/*.html examples/*.css
