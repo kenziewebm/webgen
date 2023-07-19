@@ -1,0 +1,19 @@
+.title page
+.style light
+.s testing sum code
+.code bash
+#!/usr/bin/env bash
+
+echo "good morning!"
+.end
+
+.p as you can see its superior to html because automatic syntax highlight
+
+.code c
+#include <stdio.h>
+
+int main(void) {
+	printf("hello!\n");
+	return 0;
+}
+.end

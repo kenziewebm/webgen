@@ -1,0 +1,10 @@
+---
+name: webgen
+file_extensions: [wg]
+scope: text.wg
+
+
+contexts:
+  main:
+    - match: ^\.[a-zA-Z]*
+      scope: keyword.wg

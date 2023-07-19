@@ -1,0 +1,43 @@
+body {
+	padding-right: 10%;
+	padding-left: 10%;
+
+	padding-top: 5%;
+	padding-bottom: 5%;
+
+	background-color: #2e2e2e;
+}
+
+p, h1, h2, h3 {
+	color: #fefefe;
+	font-family: terminus, Terminus, monospace;
+}
+
+a {
+	color: #81A2BE;
+	font-family: terminus, Terminus, monospace;
+}
+
+a:hover {
+	color: #cc6666;
+}
+
+pre {
+	background: #00000088;
+	border: 1px solid white;
+	padding: 5px;
+	color: #fefefe;
+}
+
+pre > hr {
+	margin-bottom: -6px;
+}
+
+img {
+	width: 100%;
+}
+
+small {
+	color: #808080;
+	font-family: terminus, Terminus, monospace;
+}
