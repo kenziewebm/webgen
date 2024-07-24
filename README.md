@@ -1,5 +1,7 @@
 # webgen
-webgen is a lightweight website generator that converts a custom markup language (wg) into html. It provides a simple way to create static websites.
+webgen is a lightweight website generator.
+
+![examples/example.wg](https://github.com/kenziewebm/webgen/blob/master/webgen.png?raw=true)
 
 ## usage
 simply run
