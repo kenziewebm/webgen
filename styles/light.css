@@ -6,16 +6,17 @@ body {
 	padding-bottom: 5%;
 
 	background-color: #fefefe;
+	font-family: Aptos, Arial, sans-serif;
+	color: #2e2e2e;
 }
 
-p, h1, h2, h3 {
-	color: #2e2e2e;
-	font-family: terminus, Terminus, monospace;
+p {
+	text-align: justify;
+	text-align-last: left;
 }
 
 a {
 	color: #81A2BE;
-	font-family: terminus, Terminus, monospace;
 }
 
 a:hover {
@@ -27,17 +28,13 @@ pre {
 	border: 1px solid black;
 	padding: 5px;
 	color: #2e2e2e;
+	font-family: Monaco, Terminus, monospace;
 }
 
 pre > hr {
 	margin-bottom: -6px;
 }
 
-img {
-	width: 100%;
-}
-
 small {
 	color: #808080;
-	font-family: terminus, Terminus, monospace;
 }
