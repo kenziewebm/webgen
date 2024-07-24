@@ -10,9 +10,7 @@ install:
 
 examples:
 	cd examples ;\
-	bash ../webgen.sh code.wg > code.html ;\
-	bash ../webgen.sh image.wg > image.html
-	#bash ../webgen.sh example.wg > example.html
+	bash ../webgen.sh example.wg > example.html
 
 batconfig:
 	mkdir -p ~/.config/bat/syntaxes/webgen

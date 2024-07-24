@@ -1,0 +1,26 @@
+.title webgen example page
+.style light
+
+.s Introduction to webgen
+.ss What is webgen?
+.p webgen is a simple [citation needed] bash script that takes in a .wg file and spits out an html page
+
+.ss how do i use webgen?
+.p take the follow code as an example:
+.code wg
+.title webgen example page
+.style dark
+
+.h im a webgen!
+
+.end
+
+.p compile it with the following:
+.code bash
+$ webgen example.wg > example.html
+
+.end
+
+.p and you should see the following:
+
+.img example.png
