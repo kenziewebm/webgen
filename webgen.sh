@@ -92,7 +92,8 @@ function parse() {
 
             .link|.href) echo "<a href=\"$2\">${@:3}</a>" ;;
 
-            .img) echo "<img src=\"$2\">" ;;
+            .img)  export RES=$(ffprobe -v 0 $2 -show_entries stream=width,height -of csv=s=x:p=0 | sed -e 's/^/style=\"width: /' -e 's/x/; height: /' -e 's/$/\"/') # retarded
+		   echo "<img src=\"$2\" $RES>" ;;
 
 	    .hr) echo "<hr>" ;;
 
