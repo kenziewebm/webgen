@@ -27,6 +27,9 @@ tag | effect
 .link | Defines a hyperlink
 .img | Inserts an image
 .hr | inserts an horizontal line
+.quote | Starts a quote (you can also specify `.quote greentext`)
+
+`.noparse` and `.code` blocks are ended with `.end`. `.quote` blocks are ended with `.endquote`, this is because im too stupid to figure out another way
 
 Example WG file:
 

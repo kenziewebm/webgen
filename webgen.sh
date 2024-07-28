@@ -11,6 +11,7 @@ SECTION=0
 SUBSECTION=0
 LAST=blank
 LANG=blank
+QUOTE=false
 STYLE=Light
 i=1
 
@@ -40,6 +41,10 @@ function parse() {
                 echo "</pre></code>"
             fi
         fi
+    elif [[ $QUOTE == true ]] && [[ $1 == ".endquote" ]]; then
+	export LAST=blank
+	export QUOTE=false
+	echo "</div>"
     else
         case $1 in
             .title) echo "<title>${@:2}</title>"
@@ -89,6 +94,9 @@ function parse() {
                    export LAST=code
                    export LANG=$2
                    export SLINE=$(expr $i + 1) ;;
+
+            .quote) echo "<div class=\"quote\">"
+		    export QUOTE=true ;;
 
             .link|.href) echo "<a href=\"$2\">${@:3}</a>" ;;
 
