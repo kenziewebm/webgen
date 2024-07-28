@@ -28,7 +28,7 @@ pre {
 	border: 1px solid white;
 	padding: 5px;
 	color: #fefefe;
-	font-family: Monaco, Terminus, sans-serif;
+	font-family: Monaco, Terminus, monospace;
 }
 
 pre > hr {
@@ -42,4 +42,9 @@ small {
 .quote {
 	border-left: 5px solid #ccc;
 	padding-left: 5px;
+}
+
+.greentext {
+	font-family: Monaco, Terminus, monospace;
+	color: #789922;
 }

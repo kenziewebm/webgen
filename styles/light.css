@@ -44,3 +44,8 @@ small {
 	padding-left: 5px;
 
 }
+
+.greentext {
+        font-family: Monaco, Terminus, monospace;
+        color: #789922;
+}

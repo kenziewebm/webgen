@@ -17,7 +17,6 @@ i=1
 
 function parse() {
     # parse() takes in a line of text and spits out a line of html.
-
     if [[ $LAST == noparse ]]; then
         if [[ $1 == ".end" ]]; then
             export LAST=blank
@@ -41,7 +40,7 @@ function parse() {
                 echo "</pre></code>"
             fi
         fi
-    elif [[ $QUOTE == true ]] && [[ $1 == ".endquote" ]]; then
+    elif [[ $QUOTE != false ]] && [[ $1 == ".endquote" ]]; then
 	export LAST=blank
 	export QUOTE=false
 	echo "</div>"
@@ -95,8 +94,13 @@ function parse() {
                    export LANG=$2
                    export SLINE=$(expr $i + 1) ;;
 
-            .quote) echo "<div class=\"quote\">"
-		    export QUOTE=true ;;
+            .quote) case $2 in
+			green|greentext) export QUOTE=green
+					 echo "<div class=\"greentext\">" ;;
+
+			*) export QUOTE=true
+			   echo "<div class=\"quote\">" ;;
+		    esac ;;
 
             .link|.href) echo "<a href=\"$2\">${@:3}</a>" ;;
 

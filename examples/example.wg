@@ -5,9 +5,9 @@
 .ss What is webgen?
 .p webgen is a simple [citation needed] bash script that takes in a .wg file and spits out an html page
 
-.quote
-This is a quote. meow
-it can be multiline!
+.quote greentext
+>This is a quote. meow
+>it can be multiline!
 .endquote
 
 .ss how do i use webgen?
