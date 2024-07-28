@@ -134,7 +134,7 @@ function parser() {
 		-h|--help) usage 0;;
 		*) export INFILE=$1
 		   while read line; do parse $line; done < $INFILE
-		   echo "<hr><small>made with <a href=\"https://github.com/aquakenzie/webgen\">webgen</a> <3</small>" ;;
+		   echo "<hr><small>made with <a href=\"https://github.com/aquakenzie/webgen\">webgen</a> <3 on $(date)</small>" ;;
 	esac
 }
 
