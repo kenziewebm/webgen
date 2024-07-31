@@ -29,3 +29,12 @@ $ webgen example.wg > example.html
 .p and you should see the following:
 
 .img example.png
+
+.hr
+.h this section is here so that the example shows how to use every tag. this is the .h tag
+.link https://github.com/kenziewebm and this is a hyperlink
+<br>
+.noparse
+.s i might forget how this works
+.end
+
