@@ -9,8 +9,9 @@ simply run
 webgen input.wg > output.html
 ```
 
-Options:
--h, --help  Display usage information
+## dependancies
+webgen requires the 'aha' and 'bat' packages for syntax highlighting.
+if these packages are not available, code blocks will not have syntax highlighting.
 
 ## wg syntax
 
@@ -31,7 +32,7 @@ tag | effect
 
 `.noparse` and `.code` blocks are ended with `.end`. `.quote` blocks are ended with `.endquote`, this is because im too stupid to figure out another way
 
-Example WG file:
+example wg file:
 
 ```wg
 .title My Website
@@ -45,7 +46,7 @@ echo "Hello, World!"
 .end
 ```
 
-The above WG file will generate the following HTML:
+the above wg file will generate the following html:
 
 ```html
 <title>My Website</title>
@@ -64,8 +65,8 @@ lang: bash
 
 see the `examples` directory for more.
 
-## note
-Note: The webgen compiler requires the 'aha' and 'bat' packages for syntax highlighting. If these packages are not available, code blocks will not have syntax highlighting.
+## websites that use webgen (friends :3)
+[azerg](https://arezg.neocities.org/alt/) <3
 
 ## license
 see LICENSE.md
