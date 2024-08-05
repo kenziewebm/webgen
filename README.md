@@ -9,6 +9,19 @@ simply run
 webgen input.wg > output.html
 ```
 
+## setup
+
+to avoid referencing the script and getting yourself in directory hell, install webgen globally by
+```sh
+make install
+```
+and then you can simply use `webgen` in your terminal everywhere.
+
+you can always uninstall webgen later using
+```sh
+make uninstall
+```
+
 ## dependancies
 webgen requires the 'aha' and 'bat' packages for syntax highlighting.
 if these packages are not available, code blocks will not have syntax highlighting.
@@ -24,7 +37,7 @@ tag | effect
 .p | Defines a paragraph
 .noparse | Excludes the content from parsing (useful for embedding HTML code)
 .style | Defines the website style (light, dark, or custom CSS file)
-.code | Defines a code block with syntax highlighting (language specified)
+.code | Defines a code block with syntax highlighting (specify the language)
 .link | Defines a hyperlink
 .img | Inserts an image
 .hr | inserts an horizontal line
@@ -63,7 +76,7 @@ lang: bash
 <hr><small>made with <a href="https://github.com/aquakenzie/webgen">webgen</a> <3</small>
 ```
 
-see the `examples` directory for more.
+see [examples](https://github.com/kenziewebm/webgen/tree/master/examples) for more.
 
 ## websites that use webgen (friends :3)
 [azerg](https://arezg.neocities.org/alt/) <3
