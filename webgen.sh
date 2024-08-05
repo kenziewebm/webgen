@@ -3,7 +3,8 @@
 
 function usage() {
 	echo "$(basename $0) - lightweight website generator"
-	echo "usage: $(basename $0) input.wg"
+	echo "usage: $(basename $0) [input.wg] > output.html"
+    echo "redirection will be optional, but still recommended."
 	return $1
 }
 
@@ -32,7 +33,7 @@ function parse() {
             LAST=blank
             echo Generating codeblock in $INFILE from l$SLINE to l$ELINE >&2
             if [[ -z "$(which aha)" ]] || [[ -z "$(which bat)" ]]; then
-                echo "warning: package 'aha' or 'bat' not found, codeblocks wont have syntax highlighting" >&2
+                echo "warning: package 'aha' or 'bat' not found, codeblocks won't have syntax highlighting" >&2
                 sed -n "${SLINE},${ELINE}p" $INFILE
                 echo "</pre></code>"
             else
