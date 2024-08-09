@@ -36,7 +36,7 @@ function parse() {
                 sed -n "${SLINE},${ELINE}p" $INFILE
                 echo "</pre></code>"
             else
-                bat -pfl $LANG -r $SLINE:$ELINE $INFILE --theme OneHalf$STYLE| aha -n
+                bat -pl $LANG -r $SLINE:$ELINE $INFILE --theme OneHalf$STYLE --color always | aha -n
                 echo "</pre></code>"
             fi
         fi
