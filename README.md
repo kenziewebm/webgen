@@ -67,6 +67,7 @@ see the `examples` directory for more.
 
 ## websites that use webgen (friends :3)
 [azerg](https://arezg.neocities.org/alt/) <3
+[femboys.institute](https://femboys.institute) <3
 
 ## license
 see LICENSE.md
