@@ -1,0 +1,100 @@
+.Dd August 11, 2024
+.Dt webgen 1
+.Os "kenziewebm"
+.
+.Sh NAME
+.Nm webgen
+.Nd world's shittiest html compiler
+.
+.Sh SYPNOSIS
+.
+.Dl webgen [file...]
+.
+.Sh DESCRIPTION
+webgen has a dot-prefix syntax that is compiled to HTML
+so you can focus more on writing your content and
+worry less about having a standardized design for your blogs.
+.Sh SYNTAX
+.
+.Ss .title [title]
+.Pp
+Defines the title of the website
+.Ss .s, .sec [section]
+.Pp
+Defines a section
+.Ss .ss, .ssec [subsection]
+.Pp
+Defines a subsection
+.Ss .h, .head [subheading]
+.Pp
+Defines a subheading
+.Ss .p [paragraph]
+.Pp
+Defines a paragraph
+.Ss .noparse
+.Pp
+Excludes the content from parsing
+.Pp
+(Useful for embedding HTML codeblocks)
+.Pp
+After this line, include your code, and after the code, close the tag
+with \fB.end\fR
+.Ss .style [light|dark|*.css]
+.Pp
+Defines the website style.
+.Pp
+This can be \fBlight\fR, \fBdark\fR or your own custom css file.
+.Ss .code [language]
+.Pp
+Defines a code block with syntax highlighting
+.Pp
+After this line, include your code, and after the code, close the tag
+with \fB.end\fR
+.Ss .link [hyperlink] [text]
+.Pp
+Defines a hyperlink
+.Ss .img [image]
+.Pp
+Inserts an image
+.Ss .quote
+.Pp
+Starts a quote
+.Pp
+You can also specify \fB.quote greentext\fR to deploy a 4chan-esque quote.
+.Pp 
+After this line, include your quote, and after the quote, close the tag
+with \fB.endquote\fR
+.
+.Sh CLOSING TAGS
+.Pp
+Most tags here do not require a closing tag because you'll write usually next to them
+.Pp
+This, however, isn't true for \fB.noparse\fR, \fB.code\fR and \fB.quote\fR tags.
+In order to close them, use \fB.end\fR, \fB.end\fR and \fB.endquote\fR respectively
+.Pp
+This was because Kenziewebm was too stupid to figure out another way
+.
+.Sh EXAMPLES
+.Pp
+Here's a basic WG file:
+.Bd
+ .title My Website
+ .s Introduction
+ .p Welcome to my website!
+ .ssec About
+ .p This website was created using webgen.
+ .code bash
+#!/usr/bin/env bash
+echo "Hello, World!"
+ .end
+.Ed
+.Pp
+You are encouraged to look at the \fBexamples\fR directory in webgen's source.
+.Sh LICENSE
+.Pp
+fuck hoes
+.Sh AUTHORS
+.Pp
+Webgen is written and maintained by \fBkenziewebm\fR <kenzie@waifu.club>.
+.Pp
+This manual page is written by arezg <arezg@cock.li>
