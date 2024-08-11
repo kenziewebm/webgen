@@ -6,6 +6,7 @@ install:
 	cp webgen.sh /usr/bin/webgen
 	mkdir -p /usr/share/webgen/styles
 	cp styles/*.css /usr/share/webgen/styles/
+	cp webgen.1 /usr/share/man/man1/webgen.1
 	
 
 examples:
@@ -23,4 +24,5 @@ clean:
 uninstall:
 	rm /usr/bin/webgen
 	rm -rf /usr/share/webgen
+	rm /usr/share/man/man1/webgen.1
 
