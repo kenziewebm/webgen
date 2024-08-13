@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # webgen compiler
 
+set -f
+
 function usage() {
 	echo "$(basename $0) - lightweight website generator"
 	echo "usage: $(basename $0) input.wg"
